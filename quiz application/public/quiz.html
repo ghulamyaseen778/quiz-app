@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>quiz application</title>
+</head>
+
+<body>
+    <div id="main">
+        <div id="header">
+            <h1 class="heading">QUIZ APPLICATION</h1>
+        </div>
+        <div class="body1">
+            <div class="username" id="username1">username</div>
+            <div class="time">
+                <div class="timer" id="sec">00</div>:
+                <div class="timer" id="min">00</div>
+            </div>
+        </div>
+        <div class="body2">
+            <p id="dynamic1"></p>
+        </div>
+        <div class="body3">
+            <div class="1">
+                <li class="1" id="options1"><input type="radio" name="option" id="options">
+                    <p id="option12">Answer</p>
+                </li>
+                <li class="2" id="options1"><input type="radio" name="option" id="options">
+                    <p id="option12">Answer</p>
+                </li>
+            </div>
+            <hr>
+            <div class="2">
+                <li class="3" id="options1"><input type="radio" name="option" id="options">
+                    <p id="option12">Answer</p>
+                </li>
+                <li class="4" id="options1"><input type="radio" name="option" id="options">
+                    <p id="option12">Answer</p>
+                </li>
+            </div>
+        </div>
+        <div class="footer">
+            <button class="btn" onclick="nextques()" id="start">next</button>
+        </div>
+    </div>
+    
+</body>
+<script src="./index.js"></script>
+<script src="./quiz.js"></script>
+<script src="./score.js"></script>
+</html>

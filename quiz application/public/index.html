@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>user data</title>
+</head>
+<body id="id">
+    <div id="main1">
+        <img id="userdata" src="./img/img1.png">
+        <input type="text" id="userdatacc">
+        <button id="start11" class="btn btn1cc" onclick="collecter()">Start Quiz</button>
+    </div>
+</body>
+<!-- <script src="./index.js"></script> -->
+<script src="./quiz.js"></script>
+<script>
+    var start11 = document.getElementById("start11");
+function collecter() {
+    var username123 = document.getElementById("userdatacc").value
+    if (username123.value=="") {
+        alert("write your name")
+    }else{
+        localStorage.setItem("current username",username123)
+        window.location.href="quiz.html"
+    }
+    
+}
+</script>
+</script>
+</html>
